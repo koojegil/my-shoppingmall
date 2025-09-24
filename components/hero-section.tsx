@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export function HeroSection() {
   return (
@@ -6,7 +7,7 @@ export function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('/elegant-fashion-model-wearing-modern-korean-style-.jpg')`,
+          backgroundImage: `url('${basePath}/elegant-fashion-model-wearing-modern-korean-style-.jpg')`,
         }}
       >
         <div className="absolute inset-0 bg-black/30"></div>
